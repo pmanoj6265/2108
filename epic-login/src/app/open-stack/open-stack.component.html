@@ -1,0 +1,44 @@
+
+<body>
+
+<h3>Open Stack - Open source software for creating private and public clouds.</h3>
+
+<div>
+  <form >
+    <label for="SName">Server Name / Tag</label>
+    <input type="text" id="SName" name="Servername" placeholder="Server name..">
+
+
+
+    <label for="Instance">Flavour</label>
+    <select id="Instance" name="Instance">
+      <option value="m1s">m1.small</option>
+      <option value="m1t">m1.tiny </option>
+      <option value="med">medium</option>
+      <option value="large">large = GPU compute</option>
+
+    </select>
+
+    <p>*Number of Instances(between 1 and 10):
+      <input type="number" name="quantity" min="1" max="10">
+
+    </p>
+
+
+
+    <label for="Image">Choose an Boot Source</label>
+    <select id="Image" name="Image">
+
+      <option value="RedHat">Red Hat Enterprise Linux 7.4 </option>
+      <option value="Ubuntu">Ubuntu Server 16.04 LTS (HVM)</option>
+      <option value="SUSELinux">SUSE Linux Enterprise Server 12 SP2</option>
+      <option value="Windows">Microsoft Windows Server 2016 Base</option>
+
+
+    </select>
+  </form>
+  <input type="submit" value="Launch ">
+</div>
+
+</body>
+

@@ -1,0 +1,43 @@
+@keyframes slider {
+  0%{
+    left: 0;
+  }
+
+  25%{
+    left: -100%;
+  }
+
+  50%{
+    left: -200%;
+  }
+
+  75%{
+    left: -300%;
+  }
+  100%{
+    left: -400%;
+  }
+
+}
+#slider {
+  overflow: hidden;
+}
+#slider figure img {
+  width: 25%;
+  float: left;
+}
+#slider figure {
+  position: relative;
+  width: 400%;
+  margin: 0;
+  left:0;
+
+  animation: 20s slider infinite;
+}
+h1{
+  text-align: center;
+  font-family: "Monotype Corsiva";
+  background-color: inherit;
+
+
+}

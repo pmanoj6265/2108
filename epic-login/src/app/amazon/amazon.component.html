@@ -1,0 +1,49 @@
+
+<body>
+
+<h3>Thanks For Choosing AWS.Amazon , Please Select EC2 Configuration</h3>
+
+<div>
+  <form >
+    <label for="SName">Server Name / Tag</label>
+    <input type="text" id="SName" name="Servername" placeholder="Server name..">
+
+
+
+
+      <p>*Number of Instances(between 1 and 10):
+        <input type="number" name="quantity" min="1" max="10">
+
+      </p>
+
+
+    <label for="Instance">Choose an Instance Type</label>
+    <select id="Instance" name="Instance">
+      <option value="t">t2.micro Free eligible</option>
+      <option value="t2">t2.small </option>
+      <option value="m">m4.large = 8 Gb</option>
+      <option value="p">p2.8xlarge = GPU compute</option>
+      <option value="c">c4.xlarge = Compute optimized</option>
+
+
+    </select>
+
+
+
+
+  <label for="Image">Choose an Amazon Machine Image (AMI)</label>
+  <select id="Image" name="Image">
+    <option value="AmazonLinux">Amazon Linux AMI 2017.03.1 (HVM)</option>
+    <option value="RedHat">Red Hat Enterprise Linux 7.4 </option>
+    <option value="Ubuntu">Ubuntu Server 16.04 LTS (HVM)</option>
+    <option value="SUSELinux">SUSE Linux Enterprise Server 12 SP2</option>
+    <option value="Windows">Microsoft Windows Server 2016 Base</option>
+
+
+  </select>
+  </form>
+  <input type="submit" value="Launch Instance">
+</div>
+
+</body>
+

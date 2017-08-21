@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class=".col-md-12">
+      <h1>Welcome to Epic Systems</h1>
+    </div>
+    <div id="slider">
+      <ul>
+        <li *ngFor="let images of visibleImages">
+            <figure>
+              <a [routerLink]="['/Login', images.id]">
+              <img  src="{{images.url}}" >
+              </a>
+            </figure>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</div>
